@@ -1,29 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Genuine Auto Parts</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genuine Auto Parts</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0a0a0a;
+  color:white;
+}
+
+/* HEADER */
+header {
+  background:#000;
+  padding:15px;
+  text-align:center;
+  font-weight:bold;
+  border-bottom:1px solid #222;
+}
+
+/* HERO */
+.hero {
+  padding:40px 20px;
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:28px;
+}
+
+.hero p {
+  color:#ccc;
+}
+
+/* BUTTONS */
+.btn {
+  display:inline-block;
+  margin:10px;
+  padding:12px 20px;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.btn-primary {
+  background:#2563eb;
+  color:white;
+}
+
+.btn-whatsapp {
+  background:#25D366;
+  color:white;
+}
+
+/* TRUST */
+.trust {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:20px;
+}
+
+.trust div {
+  background:#111;
+  padding:15px;
+  text-align:center;
+  border-radius:5px;
+}
+
+/* CATEGORIES */
+.categories {
+  padding:20px;
+}
+
+.cat-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.cat {
+  background:#111;
+  padding:15px;
+  text-align:center;
+  border-radius:5px;
+}
+
+/* FORM */
+.form {
+  padding:20px;
+}
+
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+
+button {
+  background:#2563eb;
+  color:white;
+  padding:12px;
+  border:none;
+  width:100%;
+  border-radius:5px;
+}
+
+/* WHATSAPP FLOAT */
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50px;
+  text-decoration:none;
+}
+</style>
 </head>
 
-<body style="font-family:sans-serif; padding:20px;">
+<body>
 
+<header>
+  Genuine Auto Parts
+</header>
+
+<section class="hero">
   <h1>Genuine American Auto Parts</h1>
   <p>100% Tested • 6 Months Warranty • Instant Returns</p>
 
-  <a href="https://wa.me/919XXXXXXXXX" 
-     style="display:inline-block; background:#25D366; color:white; padding:12px; text-decoration:none; margin-top:10px;">
-     Chat with Expert on WhatsApp
+  <a href="https://wa.me/14129268644?text=Hi%20I%20need%20a%20car%20part" class="btn btn-whatsapp">
+    Chat with Expert
   </a>
 
-  <h2 style="margin-top:30px;">Request a Part</h2>
+  <a href="#form" class="btn btn-primary">
+    Request Part
+  </a>
+</section>
+
+<section class="trust">
+  <div>✔ 100% Genuine</div>
+  <div>✔ Tested Parts</div>
+  <div>✔ 6 Month Warranty</div>
+  <div>✔ Instant Returns</div>
+</section>
+
+<section class="categories">
+  <h2>Browse Categories</h2>
+  <div class="cat-grid">
+    <div class="cat">Engines</div>
+    <div class="cat">Transmission</div>
+    <div class="cat">Electrical</div>
+    <div class="cat">Suspension</div>
+  </div>
+</section>
+
+<section class="form" id="form">
+  <h2>Request a Part</h2>
+
+  <a href="https://wa.me/14129268644?text=Hi%20I%20need%20a%20car%20part" class="btn btn-whatsapp">
+    Talk on WhatsApp (Fastest)
+  </a>
 
   <form>
-    <input placeholder="Full Name"><br><br>
-    <input placeholder="Phone Number"><br><br>
-    <input placeholder="Car Model"><br><br>
-    <input placeholder="VIN Number"><br><br>
-    <button type="submit">Submit</button>
+    <input placeholder="Full Name">
+    <input placeholder="Phone Number">
+    <input placeholder="Car Model">
+    <input placeholder="VIN Number">
+    <textarea placeholder="Describe Part"></textarea>
+    <button type="submit">Submit Request</button>
   </form>
+</section>
+
+<a href="https://wa.me/14129268644?text=Hi%20I%20need%20a%20car%20part" class="float">
+  WhatsApp
+</a>
 
 </body>
 </html>
